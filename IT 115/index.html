@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>Restaurant Reviewer</title>
+  <meta name="robots" content="noindex,nofollow" />
+  <meta name="viewport" content="width=device-width" />
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="css/review.css" />
+  <link rel="stylesheet" href="css/nav.css" />
+ </head>
+ <body>
+     <header>
+     <h1>Restaurant Reviewer</h1>
+     <nav class="topnav" id="myTopnav">
+       <a href="index.html" class="active">Welcome</a>
+       <a href="restaurant1.html">Restaurant 1</a>
+       <a href="restaurant2.html">Restaurant 2</a>
+       <a href="restaurant3.html">Restaurant 3</a>
+       <a href="submitreview.php">Submit a Review</a>
+       <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+     </nav>
+     </header>
+     
+   <div class="wrapper">
+     
+     <img class="desktop" src="images/desktop.png" alt="Photo of Nicholas Vialpando" />
+       
+     <img class="tablet" src="images/tablet.png" alt="Photo of Nicholas Vialpando" />
+       
+     <img class="phone" src="images/phone.png" alt="Photo of an Nicholas Vialpando" />
+       
+       <h2 class="subheader">Welcome to the Restaurant Reviewer</h2>
+       
+       <p>The place to get real reviews on your favorite places to dine.</p>
+       <p>This site reviews by restaurant name and type of food they offer</p>
+       <p>You can also submit a review on if you feel a relevant review needs to be added.</p>
+       
+     <footer>
+      <p><small>&copy; 2022 by 
+          <a href="contact.php">RR</a>, All Rights Reserved ~ 
+          <a id="html-checker" href="#">Check HTML</a> ~ 
+          <a id="css-checker" href="#">Check CSS</a></small>
+     </p>
+    </footer>
+  </div>
+     
+  <!-- Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon -->
+     
+  <script>
+    //https://tinyurl.com/dynamic-html-checker
+    document.getElementById("html-checker").setAttribute("href","https://validator.w3.org/nu/?doc=" + location.href);
+      
+    document.getElementById("css-checker").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);  
+    
+    //manages mobile nav 
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }   
+ </script>
+     
+ </body>
+</html>

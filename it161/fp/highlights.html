@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>Rebecca Moorman's Stand Up Site</title>
+  <meta name="robots" content="noindex,nofollow" />
+  <meta name="viewport" content="width=device-width" />
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/nav.css" />
+  <link rel="stylesheet" href="css/forms.css" />
+ </head>
+ 
+ <body>
+
+     <header>
+    <a href="index.html"  class="home">
+      <h1 class="name"><div class="first">REBECCA</div><div class="last">MOORMAN</div></h1>
+    </a>
+     
+     <nav class="topnav" id="myTopnav">
+       <a href="index.html">Welcome</a>
+       <a href="events.html">Upcoming Events</a>
+       <a href="highlights.html" class="active">Stand Up Highlights</a>
+       <a href="contact.php">Contact Rebecca</a>
+       <a href="../index.html">Back To IT161</a>
+       <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+       
+       <div class="social-container">
+        <div><a href="#" class="fa fa-facebook"></a></div>
+        <div><a href="#" class="fa fa-twitter"></a></div>
+        <div><a href="#" class="fa fa-youtube"></a></div>
+        <div><a href="#" class="fa fa-instagram"></a></div>
+        <div><a href="#" class="fa fa-snapchat-ghost"></a></div>
+      </div>
+     </nav>
+     </header>
+     
+   <div class="wrapper">
+     
+     <img class="desktop" src="images/standup1.jpg" alt="Photo of Rebecca" />
+       
+     <img class="tablet" src="images/standup2.jpg" alt="Photo of Rebecca" />
+       
+     <img class="phone" src="images/standup2.jpg" alt="Photo of Rebecca" />
+       
+       <h2 class="subheader"><span style="color: silver">HIGH</span>LIGHTS</h2>
+       
+       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut gravida erat in risus condimentum ullamcorper. Pellentesque in justo justo. Nulla facilisi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris at nisl euismod justo aliquam venenatis eu at libero. Quisque sed auctor risus. In ultrices leo ut elit vehicula, non rhoncus ex accumsan. Vestibulum volutpat velit ut nisl cursus, vitae porta justo auctor. Sed et ullamcorper tellus.
+       </p>
+
+        <p>Praesent aliquet consequat orci. Vestibulum dapibus pellentesque ipsum non consequat. In interdum sem odio, mollis vestibulum orci lacinia ac. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus auctor, lorem consectetur posuere dapibus, mauris urna hendrerit tellus, sed imperdiet felis enim id sapien. Sed quis elementum felis. Cras feugiat tincidunt semper. Quisque mollis libero velit, ac convallis nibh euismod in. Quisque porttitor pulvinar diam, eu gravida purus egestas et. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus bibendum, orci vitae fermentum gravida, urna justo consectetur turpis, vel consectetur velit dui vel ante. Mauris at aliquam neque, a mattis ex. Praesent at mollis mi. Suspendisse ac lectus a diam porta egestas. Ut porta gravida ex, tincidunt semper leo laoreet quis. Vivamus egestas iaculis justo, nec bibendum neque scelerisque nec.
+        </p>
+
+        <p>Cras sed leo vitae justo efficitur posuere nec at leo. Cras et justo a metus consectetur dapibus at efficitur ipsum. Mauris est tellus, viverra a imperdiet ac, fringilla et arcu. Nunc suscipit nulla ut tellus finibus, id suscipit quam scelerisque. Aliquam sed dignissim lectus, sit amet facilisis eros. In hac habitasse platea dictumst. Ut eu placerat tellus. Suspendisse a finibus lorem. Quisque egestas nulla vitae molestie sagittis.</p>
+       
+     <footer>
+      <p><small>&copy; 2022 by 
+          <a href="contact.php">Rebecca Moorman</a>, All Rights Reserved ~ 
+          <a id="html-checker" href="#">Check HTML</a> ~ 
+          <a id="css-checker" href="#">Check CSS</a></small>
+     </p>
+     <a href="disclaimer.html">DISCLAIMER/PRIVACY NOTICE</a>
+    </footer>
+  </div>
+     
+  <script>
+    //https://tinyurl.com/dynamic-html-checker
+    document.getElementById("html-checker").setAttribute("href","https://validator.w3.org/nu/?doc=" + location.href);
+      
+    document.getElementById("css-checker").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);  
+    
+    //manages mobile nav 
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }   
+ </script>
+     
+ </body>
+</html>
